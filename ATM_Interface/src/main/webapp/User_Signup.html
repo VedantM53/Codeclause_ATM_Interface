@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+     
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:skyblue;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="number"],
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+              
+        }
+
+        .btn-submit {
+            background-color:green;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+          margin-left:39%;
+        }
+
+        .btn-submit:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>Sign-up</h1>
+    
+    <div class="container">
+        <form action="user" method="post">
+        <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="number" id="id" name="id1">
+            </div>
+            <div class="form-group">
+                <label for="id">Account-No:</label>
+                <input type="text" id="accountno" name="id">
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact">
+            </div>
+          
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="key">Password:</label>
+                <input type="text" id="key" name="key">
+            </div>
+            <div class="form-group">
+                <label for="pin">Pin:</label>
+                <input type="text" id="pin" name="pin">
+            </div>
+          
+            <div class="form-group">
+                <button class="btn-submit" type="submit">Sign-up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

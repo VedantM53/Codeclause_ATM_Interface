@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color:white;
+             background-color: black;
+        }
+
+        .container {
+        color:black;
+        background-color: white;
+            max-width: 400px;
+            margin-top:10%;
+            margin-left:35%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] 
+        {
+        
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            margin-left: 5%;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body align="center" bg-color="black">
+    <div class="container">
+        <h1>CHANGE-PIN</h1>
+        <form action="pin" method="post">
+            <h2>Enter Old Pin</h2>
+            <input type="password" id="key" name="pin" placeholder="Enter Old Pin" required>
+             <h2>Enter New Pin</h2>
+            <input type="password" id="key" name="newpin" placeholder="Enter New Pin" required>
+             <h2>Confirm New Pin</h2>
+            <input type="password" id="key" name="confirmpin" placeholder="Confirm Old Pin" required>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
